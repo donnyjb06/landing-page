@@ -1,0 +1,141 @@
+/* FONT IMPORTS */
+@font-face {
+    font-family: 'ScoutCond-Bold';
+    src: url('/assets/fonts/ScoutCond-Bold.otf')
+         format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Scout';
+    src: url('/assets/fonts/ScoutRegular-Bold.otf')
+         format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* PADDING & MARGIN RESET */
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER | NAV BAR */
+.nav-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav-bar > img {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    font-family: 'ScoutCond-Bold';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.15s, text-shadow 0.15s;
+}
+
+.nav-link:hover {
+    text-shadow: 0px 0px 15px rgba(21, 20, 23, 0.46);
+    transform: scale(1.2);
+    transition: transform 0.15s, text-shadow 0.15s;
+}
+
+
+/* BODY SECTION */
+
+p {
+    font-family: 'roboto';
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 700px;
+    align-items: center;
+}
+
+.sec-1-bg {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    min-height: 70%;
+    align-items: center;
+    gap: 55px;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 40px;
+}
+
+.landing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+}
+
+.landing-section h1 {
+    font-family: 'ScoutCond-Bold';
+    font-size: 4rem;
+    line-height: 55px;
+    color: white;
+    margin-bottom: 0px;
+    text-shadow: 0 0 15px #fff;
+}
+
+#section-1-image {
+    height: 250px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.video-bg {
+    z-index: -1;
+    position: absolute;
+    width: auto;
+    min-width: 100%;
+    min-height: 100%
+}
+
+#section-1-cta {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'ScoutCond-Bold';
+    font-size: 2rem;
+    padding: 10px 12px;
+    transition: text-shadow 0.15s, transform 0.25s;
+    cursor: pointer;
+}
+
+#section-1-cta:hover {
+    text-shadow: 0 0 15px #fff;
+    transform: scale(1.2);
+    transition: text-shadow 0.15s, transform 0.25s;
+}
