@@ -212,3 +212,36 @@ p {
     background: linear-gradient(transparent 40%, #F2C438);
 }
 
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+    min-height: 700px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.quote p {
+    font-family: "Oswald";
+    font-size: 1.3rem;
+    text-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+}
+
+.quote h2 {
+    font-family: 'ScoutCond-Bold';
+    color: white;
+    align-self: flex-end;
+    font-size: 3rem;
+    margin-top: 0;
+    text-shadow: 0 10px 30px #000;
+
+}
