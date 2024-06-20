@@ -232,7 +232,7 @@ p {
 
 .quote p {
     font-family: "Oswald";
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 }
 
@@ -240,7 +240,7 @@ p {
     font-family: 'ScoutCond-Bold';
     color: white;
     align-self: flex-end;
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 0;
     text-shadow: 0 10px 30px #000;
 
