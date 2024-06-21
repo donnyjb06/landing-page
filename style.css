@@ -277,3 +277,17 @@ p {
     font-size: 1.5rem;
     text-shadow: 0 0 15px #000;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-family: 'ScoutCond-Bold';
+    margin-right: 100px;
+    font-size: 2rem;
+}
