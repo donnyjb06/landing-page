@@ -105,13 +105,15 @@ p {
     font-size: 4rem;
     line-height: 55px;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     text-shadow: 0 0 15px #000;
 }
 
 .landing-section p {
     text-shadow: 0 0 15px #000;
+    margin-bottom: 5%;
     font-family: 'Oswald';
+    font-weight: lighter;
     font-size: 1.4rem;
 }
 
@@ -151,10 +153,14 @@ p {
 /* ICONIC OPERATORS SECTION */
 .section-2 {
     display: flex;
-    background-color: black;
+    background: url('assets/images/neon-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
     min-height: 700px;
     flex-direction: column;
     align-items: center;
+
 }
 
 .iconic-ops {
@@ -162,6 +168,7 @@ p {
     font-family: 'ScoutCond-Bold';
     font-size: 3rem;
     margin: 0;
+    text-shadow: rgba(0,225,255,1) 0px 0px 20px;
 }
 
 .operator-section {
@@ -183,14 +190,17 @@ p {
     color: white;
     font-size: 3rem;
     margin-bottom: 0px;
-    text-shadow: 0 0 15px #fff;
+    text-shadow: rgba(0,225,255,1) 0px 0px 12px;
 }
 
 .operator-info p {
     font-family: 'Oswald';
+    font-weight: lighter;
     margin-top: 40px;
     width: 250px;
     font-size: 1.3rem;
+    color: white;
+    text-shadow: rgba(0, 255, 255, 1) 0px 0px 39px;
 }
 
 .operator-img {
@@ -198,18 +208,7 @@ p {
     width: 250px;
     height: auto;
     margin: 0;
-}
-
-#ash {
-    background: linear-gradient(transparent 40%, #D15F33);
-}
-
-#sledge {
-    background: linear-gradient(transparent 40%, #90717B);
-}
-
-#jager {
-    background: linear-gradient(transparent 40%, #F2C438);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0));
 }
 
 
@@ -219,7 +218,7 @@ p {
     justify-content: space-around;
     position: relative;
     overflow: hidden;
-    min-height: 700px;
+    min-height: 600px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -232,6 +231,7 @@ p {
 
 .quote p {
     font-family: "Oswald";
+    font-weight: lighter;
     font-size: 1.8rem;
     text-shadow: 0 10px 30px rgba(0, 0, 0, 1);
 }
@@ -243,5 +243,37 @@ p {
     font-size: 5rem;
     margin-top: 0;
     text-shadow: 0 10px 30px #000;
+}
 
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: url('assets/images/neon-bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300% 400%;
+}
+
+.blurred-bg {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    min-height: 30%;
+    align-items: center;
+    gap: 55px;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 40px;
+}
+
+.blurred-bg p {
+    width: 600px;
+    font-family: "Oswald";
+    font-weight: lighter;
+    font-size: 1.5rem;
+    text-shadow: 0 0 15px #000;
 }
