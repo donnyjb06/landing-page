@@ -30,6 +30,8 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    z-index: 2;
+    position: relative;
 }
 
 .nav-bar > img {
@@ -68,6 +70,48 @@ p {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    position: relative;
+}
+
+#sources-modal {
+    align-self: flex-end;
+    display: none;
+    margin: 15px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 15px;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    animation-name: animatemodal;
+    animation-duration: .8s;
+}
+
+/* MODAL CONTAINER */
+@keyframes animatemodal {
+    from {
+        top: -300%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+#source-btn {
+    cursor: pointer;
+}
+
+#sources-modal a {
+    color: white;
+    cursor: pointer;
 }
 
 .section-1 {
